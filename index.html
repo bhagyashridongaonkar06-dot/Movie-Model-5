@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie model 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-6">
+                <a href="index.html">
+                    <img src="https://occ.a.nflxso.net/dnmt/api/v6/iL4oJVDYZ8KLSrJ6eG2OwtghbfQ/AAAAAWiPHORowsUPy4Ef8HnCO9JXGoNeHRyWtWY4xZAfUtau5iCnG2Ko_-8QuKVa8P6wtpfnyGopi4LoAha-VghVRE_N6kRqhwpLQCpga5tzrlTEHRGHgzpa9PYmEEEgQyuEdhsyq9vmhmPR.svg" alt="ogo" class="logo">
+                </a>
+            </div>
+
+            <div class="col-6 text-right ">
+                <button class="btn btn-sm pri-btn" id="formBtn">Add Movie</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row" id="movieContainer">
+            <!-- <div class="col-3">
+                <div class="card movieCard sec-btn" id="movieCard">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="col-8 p-0">
+                            <h4 class="m-0 ">Movie Nameeeeeeee</h4>
+                        </div>
+                        <div class="col-2 offset-1">
+                            <h5 class="m-0"><span class="badge badge-warning pl-2">5</span></h5>
+                        </div>
+
+                    </div>
+                    <div class="card-body py-0 px-2">
+                        <figure>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Miss_India_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="movie">
+
+
+                            <figcaption>
+                                <h4 class="m-0">Miss India</h4>
+
+                                <p>Miss India is a 2020 Indian Telugu-language business drama film written and directed by Narendra Nath.[1][2] It stars Keerthy Suresh and Jagapathi Babu, while Rajendra Prasad, Naresh, Nadhiya, and Naveen Chandra play supporting roles. The plot follows Manasa Samayuktha (Keerthy Suresh), a girl from a middle-class South Indian family, who dreams of having her tea business in the US. The film received negative reviews</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-sm sec-btn" type="button">Edit</button>
+                        <button class="btn btn-sm pri-btn" type="button">Remove</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="backdrop formClose" id="backdrop"></div>
+    <form action="" class="form" id="form">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <h5 class="m-0 text">Add Movie</h5>
+
+                <h5 class="m-0"><i class="fa-solid fa-square-xmark formClose fa-2x"></i></h5>
+            </div>
+
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="movieName">Movie Name<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="movieName">
+                </div>
+
+                <div class="form-group">
+                    <label for="movieImage">Movie Image<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="movieImage">
+                </div>
+
+                <div class="form-group">
+                    <label for="movieDescription">Movie Description<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="movieDescription">
+                </div>
+
+                <div class="form-group">
+                    <label for="movieRating">Movie Rating<span class="text-danger">*</span></label>
+                    <select name="" class="form-control" id="movieRating">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="card-footer d-flex justify-content-between">
+                <button type="submit" class="btn btn-sm pri-btn" id="addMovie">Add Movie</button>
+                <button type="button" class="btn btn-sm sec-btn d-none" id="updateMovie">Update Movie</button>
+                <button type="button" class="formClose sec-btn">Cancel</button>
+            </div>
+        </div>
+    </form>
+
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
