@@ -105,6 +105,17 @@ function setRating(rating){
 
 let defaultImage = 'https://i.pinimg.com/564x/00/81/b6/0081b6169b11a806603d770b179f974a.jpg'
 
+
+//function snackbar
+
+function snackbar(){
+    Swal.fire({
+        title : msg,
+        icon : icon,
+        timer : 3000
+    })
+}
+
 //read templating functionality
 
 function onCreateCard(arr){
@@ -197,6 +208,7 @@ function onSubmitMovie(eve){
                 </div>`
 
     movieContainer.append(newMovieCard)
+    snackbar('new movie card created successfully', 'success')
 
 }
 
@@ -275,7 +287,7 @@ function onUpdate(){
                     </div>
                 </div>`
 
-
+    snackbar('movie card updated successfully', 'success')
 }   
 
 function onDelete(ele){
@@ -288,6 +300,8 @@ function onDelete(ele){
     localStorage.setItem('movieArray', JSON.stringify(movieArray))
 
     ele.closest('.col-3').remove()
+
+    snackbar('movie card from movie list deleted successfully', 'success')
 }
 
 form.addEventListener('submit', onSubmitMovie)
